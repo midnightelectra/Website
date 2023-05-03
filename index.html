@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Playfair Display;
+  padding: 10px;
+  background: #AC92EC;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: thistle;
+border-style: solid;
+border-width: 15px;
+  }
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 100%;
+  padding-left: 2px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: silver;
+  width: 40%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: thistle;
+  padding: 20px;
+  margin-top: 20px;
+  border-style: solid;
+
+    border-width: 5px;
+  
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MIDNIGHT ELECTRA</h1>
+  <p>LA based music produer and DJ.</p>
+</div>
+  <div class="topnav">
+  <a href="https://www.youtube.com/@MIDNIGHTELECTRA/about">Youtube</a>
+  <a href="https://www.instagram.com/midnightelectra">Instagram</a>
+
+
+</div>
+  <br></br>
+
+ 
+
+</div>
+  <div class="header">
+   <h2>UPCOMING EVENTS</h2>
+      <h3> SILENT DISCO </h3>
+      <h5>Station 1640, April 21th, 2023
+        at 9pm</h5>
+      <img src="https://eventective-media.azureedge.net/3073648_lg.jpg"style="height:200px;"</div> <img src=data:image/png;base64,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>
+      <p>1640 N Cahuenga Blvd, Los Angeles, CA 90028</p>
+      <p>
+Step into the world of sonic magic with Midnight Electra and DJ 4MULA’s back-to-back set at Station 1640’s Silent Disco. Known for their curated blends of future house and techno, Electra and 4MULA’s  diverse  discography comes from a love for high energy crowds and deep connections to their audiences. Whether you’re a die-hard fan of electronic dance music or just looking for a night of entertainment, their debut performance is not to be missed.
+</p>
+    
+</div>
+
+<br>
+ <div class="header">
+   <h2>UPCOMING EVENTS</h2>
+      <h3> SILENT DISCO </h3>
+      <h5>Station 1640, April 21th, 2023
+        at 9pm</h5>
+      <img src="https://eventective-media.azureedge.net/3073648_lg.jpg"style="height:200px;"</div> <img src=data:image/png;base64,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>
+      <p>1640 N Cahuenga Blvd, Los Angeles, CA 90028</p>
+      <p>
+Step into the world of sonic magic with Midnight Electra and DJ 4MULA’s back-to-back set at Station 1640’s Silent Disco. Known for their curated blends of future house and techno, Electra and 4MULA’s  diverse  discography comes from a love for high energy crowds and deep connections to their audiences. Whether you’re a die-hard fan of electronic dance music or just looking for a night of entertainment, their debut performance is not to be missed.
+</p>
+    
+</div>
